@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var second : Int = 0
     var timer = Timer()
     
+    @IBOutlet weak var circleViewContainer: UIImageView!
     @IBOutlet weak var countDownLabel: UILabel!
     
     
@@ -32,9 +33,10 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //print("Ekrana Dokundun")
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor(displayP3Red: 243/255.0, green: 156/255.0, blue: 18/255.0, alpha: 1)
         actionViewOutlet.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.timerFunc)), userInfo: nil, repeats: true)
+        circleViewContainer.isHidden = false
         
     }
     
@@ -42,7 +44,9 @@ class ViewController: UIViewController {
         print("Elini Çektin")
         timer.invalidate()
         actionViewOutlet.isHidden = false
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(colorLiteralRed: 236/255.0, green: 240/255.0, blue: 241/255.0, alpha: 1)
+        circleViewContainer.isHidden = true
+        
         
     }
     
@@ -75,6 +79,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         countDownLabel.text = String(second)
+        view.backgroundColor = UIColor(colorLiteralRed: 236/255.0, green: 240/255.0, blue: 241/255.0, alpha: 1)
+        circleViewContainer.isHidden = true
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
