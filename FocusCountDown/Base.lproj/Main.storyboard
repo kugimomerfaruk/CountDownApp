@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gma-aO-VKu">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="gma-aO-VKu">
                                 <rect key="frame" x="16" y="97" width="343" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
@@ -29,8 +29,8 @@
                                 <rect key="frame" x="16" y="122" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geri Sayım İçin Ekrana Tıkla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lID-SG-1Jj">
-                                        <rect key="frame" x="66" y="87" width="211" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geri Sayım İçin Ekrana Dokun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lID-SG-1Jj">
+                                        <rect key="frame" x="66" y="87" width="224" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -59,7 +59,7 @@
                     <connections>
                         <outlet property="actionViewOutlet" destination="jnE-NO-atM" id="KhY-a4-WsK"/>
                         <outlet property="countDownLabel" destination="Enx-yF-inM" id="1Pd-Pr-0Ac"/>
-                        <outlet property="progressBarOutlet" destination="8bC-Xf-vdC" id="hQd-gV-ucy"/>
+                        <outlet property="progressBarOutlet" destination="gma-aO-VKu" id="CQ8-gO-n0Y"/>
                         <outlet property="stepperOutlet" destination="Owa-Ny-bhH" id="w6a-hd-dMb"/>
                     </connections>
                 </viewController>
